@@ -62,7 +62,7 @@ body {
   color: var(--accent);
   font-weight: 700;
   letter-spacing: 0.3px;
-  font-size: 1.2rem; /* slightly larger brand text */
+  font-size: 1.4rem; /* slightly larger brand text */
 }
 
 .main-nav { display: flex; gap: 18px; }
@@ -106,9 +106,9 @@ body {
   align-items: center;
 }
 
-/* Make the first page image slightly larger by equalizing columns */
+/* Make the first page image larger by widening the image column */
 #home .grid.two-cols {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1.2fr;
 }
 
 .card {
