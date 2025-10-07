@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Проект о экспоненциальном росте фитоспор: описание, рекомендации, научные заметки, формулы с графиком и инструктаж. Бело-зелёная тема, аккуратный дизайн." />
+  <title>Фитоспоры — рост, борьба и наука</title>
+
+  <!-- Base styles and fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Icons and manifest will be injected dynamically by script.js -->
+</head>
+<body>
+  <header class="site-header glass">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="На главную">Фитоспоры</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="main-nav">
+        <a href="#home">О фитоспорах</a>
+        <a href="#tips">Рекомендации</a>
+        <a href="#scientist">Опрос</a>
+        <a href="#math">Формулы</a>
+        <a href="#guide">Инструктаж</a>
+        <a href="#final">Финал</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="snap-container">
+    <!-- 1. Главная — О фитоспорах -->
+    <section id="home" class="section snap">
+      <div class="container grid two-cols">
+        <div class="card">
+          <h1>Фитоспоры: микромир, умеющий расти экспоненциально</h1>
+          <p>
+            Фитоспоры — это крошечные частицы жизни, которые умеют быстро размножаться при благоприятных условиях. Они невидимы невооружённому глазу, но оставляют заметный след в экосистемах и сельском хозяйстве. Вред может проявляться в поражении растений, снижении урожайности и ухудшении качества продукции. Но научный взгляд открывает и пользу: изучение фитоспор помогает совершенствовать биозащиту, создавать устойчивые сорта и лучше понимать микробиологический баланс почвы.
+          </p>
+        </div>
+        <figure class="card image-card">
+          <img src="placeholder-spores.jpg"
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2. Рекомендации и памятки -->
+    <section id="tips" class="section snap">
+      <div class="container grid two-cols">
+        <div class="card">
+          <h2>Рекомендации по борьбе с фитоспорами</h2>
+          <ul class="checklist">
+            <li>Регулярно осматривайте растения и почву, фиксируйте изменения.</li>
+            <li>Поддерживайте санитарный режим: чистый инвентарь, аккуратный полив, умеренная влажность.</li>
+            <li>Применяйте профилактические обработки согласно инструкции к выбранным средствам.</li>
+            <li>Не допускaйте загущения посадок — обеспечение проветривания снижает риск развития спор.</li>
+            <li>Проводите севооборот и используйте устойчивые сорта для долгосрочной профилактики.</li>
+            <li>При необходимости консультируйтесь с агрономом или микологом для уточнения режима обработок.</li>
+          </ul>
+        </div>
+        <div class="card memo">
+          <h3>Памятка для школьников</h3>
+          <p>
+            Если вы исследуете фитоспоры на уроке или кружке: работайте в перчатках, аккуратно пользуйтесь лабораторными инструментами и всегда соблюдайте инструкции учителя. Ведите наблюдательный дневник: дата, условия, что заметили. Важно не только увидеть результат, но и корректно его описать.
+          </p>
+          <p>
+            Любая наука начинается с вопросов. Сравните разные условия (свет, влажность, температура) и сделайте выводы: где споры активнее, как меняется скорость роста, как влияют обработки.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Великий учёный -->
+    <section id="scientist" class="section snap">
+      <div class="container scientist">
+        <div class="card center">
+          <h2>Великий учёный — Зарян Гагик Давидович (Гениальный Файзик)</h2>
+          <button id="openScientistModal" class="btn primary">Зарян Гагик Давидович</button>
+          <div class="quotes">
+            <p><strong>Что вы думаете насчет гербицида?</strong> — я ваше всё не нюхал</p>
+            <p><strong>Как вы относитесь к фитоспорам?</strong> — удобрял я их</p>
+            <p><strong>Как бороться с ними?</strong> — снять новый фильм «Во все споры»</p>
+            <p><strong>Какие бы мирные решения можно принять против фитоспор?</strong> — это мои грибы, я их ем</p>
+            <p><strong>Какие рекомендации вы дадите человеку, который встретит их в обычной жизни?</strong> — сровнять под ноль и свечку за упокой</p>
+          </div>
+        </div>
+        <figure class="card image-card">
+          <img src="placeholder-scientist.jpg"
+        </figure>
+      </div>
+
+      <!-- Modal -->
+      <div id="scientistModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="scientistTitle">
+        <div class="modal-backdrop" data-close="modal"></div>
+        <div class="modal-dialog" role="document">
+          <div class="modal-header">
+            <h3 id="scientistTitle">Зарян Гагик Давидович — заметка</h3>
+            <button class="modal-close" aria-label="Закрыть" data-close="modal">×</button>
+          </div>
+          <div class="modal-body">
+            <p>
+                Псевдо-учёный с озорным чувством юмора и феноменальными познаниями в разных науках. Его подход прекрасно подойдёт для начинающих исследователей и для тех кому впринципе интересна науках в разных сферах.
+            </p>
+            <img src="modal-note.jpg" alt="Иллюстрация к заметке об учёном" class="inline-modal-image" />
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-close="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Формулы и график -->
+    <section id="math" class="section snap">
+      <div class="container grid two-cols">
+        <div class="card">
+          <h2>Модель экспоненциального затухания</h2>
+          <p>
+            Используем классическую формулу, описывающую снижение активности после последовательных обработок:
+          </p>
+          <pre class="formula">Vi = V0 * (1 + K)<sup>-N</sup></pre>
+          <form id="calcForm" class="calc-form" autocomplete="off">
+            <div class="form-row">
+              <label for="V0">V0 (начальный уровень):</label>
+              <input id="V0" name="V0" type="number" step="0.0001" min="0" value="100" required />
+            </div>
+            <div class="form-row">
+              <label for="K">K (коэффициент):</label>
+              <input id="K" name="K" type="number" step="0.0001" min="-0.99" value="0.2" required />
+            </div>
+            <div class="form-row">
+              <label for="N">N (число обработок):</label>
+              <input id="N" name="N" type="number" step="1" min="0" max="20" value="10" required />
+            </div>
+            <button type="submit" class="btn primary">Рассчитать</button>
+          </form>
+          <div class="calc-output">
+            <p class="hint">Результаты появятся ниже в таблице и на графике. Значения Vi рассчитываются для i = 0…N.</p>
+            <div class="table-wrap">
+              <table id="resultsTable" aria-label="Таблица результатов">
+                <thead>
+                  <tr>
+                    <th>i</th>
+                    <th>Vi</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+          <p class="conclusion" id="calcConclusion"></p>
+        </div>
+        <div class="card">
+          <h3>График Vi по числу обработок</h3>
+          <canvas id="chartCanvas" width="800" height="480" aria-label="График Vi" role="img"></canvas>
+          <p class="small-muted">Зелёная линия с точками показывает динамику снижения. Масштаб осей подстраивается под данные.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Инструктаж -->
+    <section id="guide" class="section snap">
+      <div class="container card">
+        <h2>Инструктаж: как действовать при встрече с фитоспорами</h2>
+        <div class="table-wrap">
+          <table class="guide-table" aria-label="Подробный инструктаж">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Действие</th>
+                <th>Цель</th>
+                <th>Средства защиты/инструменты</th>
+                <th>Примечания</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Оценить обстановку</td>
+                <td>Понять масштаб и локализацию очага</td>
+                <td>Фонарик, блокнот/телефон для заметок</td>
+                <td>Отметьте влажность, температуру, освещённость</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Ограничить распространение</td>
+                <td>Снизить перенос спор на соседние растения</td>
+                <td>Перчатки, пакеты/контейнеры, салфетки</td>
+                <td>Удалите сильно поражённые части, утилизируйте</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Стабилизировать условия</td>
+                <td>Сделать среду менее благоприятной для спор</td>
+                <td>Вентилятор/проветривание, гигрометр</td>
+                <td>Снизьте влажность, исключите застой воздуха</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Подготовить обработку</td>
+                <td>Безопасно нанести выбранное средство</td>
+                <td>Защитные очки, перчатки, дозатор/опрыскиватель</td>
+                <td>Проверьте совместимость и срок годности препарата</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Провести обработку</td>
+                <td>Снизить активность и количество спор</td>
+                <td>Средство согласно инструкции</td>
+                <td>Соблюдайте дозировку и интервалы между обработками</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Продезинфицировать инвентарь</td>
+                <td>Исключить повторное занесение спор</td>
+                <td>Дезраствор, салфетки, контейнер для отходов</td>
+                <td>Обработайте поверхности и инструменты полностью</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Зафиксировать результаты</td>
+                <td>Оценить эффективность и динамику</td>
+                <td>Фото до/после, журнал наблюдений</td>
+                <td>Запишите дату, условия, меры и изменения</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Профилактика</td>
+                <td>Предотвратить повторное развитие</td>
+                <td>Севооборот, разреженные посадки, питание</td>
+                <td>Скорректируйте полив, освещение, плотность посадки</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Финальная страница (визуальный акцент) -->
+    <section id="final" class="section snap final-visual">
+      <div class="final-wrap">
+        <img src="final-image.png" alt="Символическая визуализация темы (замените на свою картинку)" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer glass">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Проект о фитоспорах.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
