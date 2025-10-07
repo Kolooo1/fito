@@ -222,4 +222,7 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
   .main-nav { display: none; position: absolute; right: 4%; top: 62px; background: #fff; padding: 10px; border-radius: 12px; box-shadow: var(--shadow); }
   .main-nav.open { display: grid; gap: 8px; }
   .nav-toggle { display: inline-block; }
+  /* Make the first page image smaller on phones */
+  #home .image-card img { max-width: 82vw; margin: 0 auto; }
+  #home .image-card { padding: 16px; }
 }
